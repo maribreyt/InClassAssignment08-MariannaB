@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/key_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KEY"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:id="@+id/key_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Type key here"/>
+
+    <TextView
+        android:id="@+id/value_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VALUE"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:id="@+id/value_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Type value here"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+
+        <Button
+            android:id="@+id/write_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write to cloud"
+            android:onClick="writeToCloud"
+            />
+
+        <Button
+            android:id="@+id/read_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read from cloud"
+            android:onClick="readFromCloud"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
